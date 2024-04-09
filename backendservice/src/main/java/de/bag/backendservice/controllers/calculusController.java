@@ -1,6 +1,7 @@
 package de.bag.backendservice.controllers;
 import org.springframework.http.HttpStatusCode;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -20,6 +21,7 @@ public class calculusController {
     }
  
     @GetMapping("/calculus/{eingabe}")
+    @CrossOrigin
     public ResponseEntity<Integer> powerOfTwo(@PathVariable("eingabe") Integer zahl) {
         Integer ergebnis = this._calculusLogic.calculatePowerOfTwo(zahl);
         return new ResponseEntity<Integer>(ergebnis,  HttpStatusCode.valueOf(200));

@@ -1,7 +1,9 @@
 <p>calculus</p>
 <p>
-<mat-form-field appearance="fill">
+  <mat-form-field appearance="fill">
     <mat-label>First digit</mat-label>
-    <input matInput placeholder="digit">
+    <input matInput placeholder="digit" [(ngModel)]="num">
   </mat-form-field>
+  <br />
+  <button mat-raised-button (click)="click()">POWER!</button> {{ result }}
 </p>
