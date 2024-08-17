@@ -1,7 +1,28 @@
-<p>calculus</p>
+<p>Bitte gib zwei Zahlen ein und lege die Berechungsoperation fest.</p>
 <p>
-<mat-form-field appearance="fill">
-    <mat-label>First digit</mat-label>
-    <input matInput placeholder="digit">
+  <mat-form-field appearance="fill">
+    <mat-label>Zahl</mat-label>
+    <input matInput placeholder="digit" [(ngModel)]="data.zahl1" name="first">
+  </mat-form-field>
+  
+  <mat-form-field appearance="fill">
+    <mat-label>Operation</mat-label>
+    <mat-select [(ngModel)]="data.operation" name="operator">
+      <mat-option value="+">+</mat-option>
+      <mat-option value="-">-</mat-option>
+      <mat-option value="*">*</mat-option>
+      <mat-option value="/">/</mat-option>
+    </mat-select>
+  </mat-form-field>
+
+  <mat-form-field appearance="fill">
+    <mat-label>Zahl</mat-label>
+    <input matInput placeholder="digit" [(ngModel)]="data.zahl2" name="second">
   </mat-form-field>
 </p>
+<p>
+  <button mat-stroked-button (click)="calculate()">Berechne!</button>  
+</p>
+
+<p class="ergebnis">{{erg}} {{ergebnis}}</p>
+<p class="ergebnis">{{ergebnis2 | async}}</p>
