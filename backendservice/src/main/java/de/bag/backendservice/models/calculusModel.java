@@ -6,5 +6,7 @@ import lombok.NoArgsConstructor;
 @Data
 @NoArgsConstructor
 public class calculusModel {
-    
+    Double zahl1;
+    Double zahl2;
+    String operator;
 }
