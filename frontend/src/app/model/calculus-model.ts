@@ -1,8 +1,8 @@
 
 
-export class CalculusData {
-    zahl1 = '';
-    operation = '';
-    zahl2 = '';    
+export interface CalculusData {
+    zahl1? : number;
+    operation? : string;
+    zahl2? : number;    
   };
 

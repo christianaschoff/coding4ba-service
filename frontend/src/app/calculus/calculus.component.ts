@@ -10,19 +10,18 @@ import { Observable, map, of } from 'rxjs';
 })
 export class CalculusComponent {
 
-  data: CalculusData;
+  data: CalculusData = { };
   erg = 'Ergebnis:';
-  ergebnis?: Number;
+  // ergebnis?: Number;
   ergebnis2?: Observable<Number>;
 
-  constructor(private readonly caller: CalcService) {
-    this.data = new CalculusData();    
+  constructor(private readonly caller: CalcService) {      
   }
 
   calculate() {
-    this.caller.berechne(this.data).subscribe(x => this.ergebnis = x);
+    // this.caller.berechne(this.data).subscribe(x => this.ergebnis = x);
     this.ergebnis2 = this.caller.berechne(this.data);
-    //console.log(this.data.zahl1, this.data.operation, this.data.zahl2);
+    // console.log(this.data.zahl1, this.data.operation, this.data.zahl2);
   }
 
 }

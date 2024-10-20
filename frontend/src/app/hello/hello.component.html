@@ -1,0 +1,6 @@
+<p>hello works!</p>
+<input type="text" [(ngModel)]="vorname">
+<input type="button" value="say hello" (click)="askWebservice()">
+<br>Datenbindung: {{vorname}}
+<br>{{antwort}}
+<br>{{antwortWebservice | async}}
