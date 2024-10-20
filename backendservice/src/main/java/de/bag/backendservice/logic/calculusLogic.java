@@ -7,7 +7,13 @@ import de.bag.backendservice.models.MathematicalModel;
 @Component
 public class calculusLogic {
     public Integer powerOfT(Integer eingabe) {
-        return eingabe * eingabe;
+        if(eingabe > 0) {
+            return 1;
+        } 
+        if(eingabe < 0)  {
+            return -1;
+        }        
+        return 0;
     }
 
     public double calculate(MathematicalModel math) {
