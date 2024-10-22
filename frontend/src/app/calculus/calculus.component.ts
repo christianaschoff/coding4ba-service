@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { CalculusModel } from '../models/calculus-model';
 
 @Component({
   selector: 'app-calculus',
@@ -6,5 +7,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./calculus.component.scss']
 })
 export class CalculusComponent {
+  model: CalculusModel = {};
   
 }

@@ -19,10 +19,17 @@ $my-theme: mat.define-light-theme((
 
 
 html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif;  background-color: #fffffa; 
-div.main {
-    max-width: 640px;
-    margin-left: auto;
-    margin-right: auto;
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; color: #000000 ; background-color: #202020; 
 }
+div.main {
+  max-width: 640px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 32px;
+  background-color: #d2d2d2;
+  padding: 26px;
+}
+h1, h2, h3 {
+  color: #d33900;
+  text-transform: uppercase;
 }
