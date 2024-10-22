@@ -33,25 +33,4 @@ public class helloWorldController {
             
         return new ResponseEntity<PersonModel>(eingabe, HttpStatusCode.valueOf(200));
     }
-
-/*
-    @GetMapping(value = "/x", produces= MediaType.TEXT_HTML_VALUE)
-    @ResponseBody
-    public String htmlGet() throws IOException {
-        var str = getClass().getClassLoader().getResourceAsStream("static/page.html");
-        return readFromInputStream(str);
-    }
-
-    private String readFromInputStream(InputStream inputStream) throws IOException {
-        StringBuilder resultStringBuilder = new StringBuilder();
-        try (BufferedReader br
-        = new BufferedReader(new InputStreamReader(inputStream))) {
-            String line;
-            while ((line = br.readLine()) != null) {
-                resultStringBuilder.append(line).append("\n");
-            }
-        }
-        return resultStringBuilder.toString();
-    }
-  */
 }

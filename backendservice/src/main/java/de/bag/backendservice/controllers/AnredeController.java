@@ -22,22 +22,8 @@ public class AnredeController {
     @GetMapping("/anrede/{anrede}")
     public ResponseEntity<String> GetAnredeAnrede(@PathVariable("anrede") String anrede) {
         AnredeLogic anredeObjectMM = new AnredeLogic("Melanie", "Meyer");
-        String nameMitAnrede = anredeObjectMM.grossKlein(anrede);
-
-        Integer x = 5; //x hat der Wert 5
-        String y = "Hallo"; //y hat den Wert Hallo
-       
+        String nameMitAnrede = anredeObjectMM.grossKlein(anrede);     
 
         return new ResponseEntity<String>(nameMitAnrede, HttpStatusCode.valueOf(200));
     }  
-    private Integer bla(Integer x) {
-        if(x > 5) {
-            return 1;
-        }else if (x == 5) {
-            return 0;        
-        } else {
-            return -1;
-        }
-    } 
-
 }
