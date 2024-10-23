@@ -2,6 +2,25 @@
 <p>
   <mat-form-field appearance="fill">
     <mat-label>First digit</mat-label>
-    <input matInput placeholder="digit">
+    <input matInput placeholder="digit" [(ngModel)]="model.zahl1">
   </mat-form-field>
+
+  <mat-form-field appearance="fill">
+    <mat-label>Operation</mat-label>
+    <mat-select [(ngModel)]="model.operator">
+      <mat-option value="plus">+</mat-option>
+      <mat-option value="minus">-</mat-option>
+      <mat-option value="mal">*</mat-option>
+      <mat-option value="geteilt">/</mat-option>
+    </mat-select>
+  </mat-form-field>
+
+  <mat-form-field appearance="fill">
+    <mat-label>Second digit</mat-label>
+    <input matInput placeholder="digit" [(ngModel)]="model.zahl2">
+  </mat-form-field>
+</p>
+<p class="ergebnis">Ergebnis: {{ erebnis | async }}</p>
+<p>
+  <button mat-stroked-button (click)="calculate()">Berechne!</button>  
 </p>
