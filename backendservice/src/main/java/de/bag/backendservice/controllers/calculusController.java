@@ -11,11 +11,11 @@ import de.bag.backendservice.models.CalculusModel;
 
 @RestController
 @CrossOrigin
-public class CalculusController {
+public class calculusController {
     
     CalculusLogic calculuslogic;
 
-    public CalculusController(CalculusLogic logic) {
+    public calculusController(CalculusLogic logic) {
         super();
         this.calculuslogic = logic;    
     }
