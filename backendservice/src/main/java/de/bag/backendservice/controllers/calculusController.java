@@ -9,11 +9,11 @@ import de.bag.backendservice.logic.CalculusLogic;
 import de.bag.backendservice.models.CalculusModel;
 
 @RestController
-public class CalculusController {
+public class calculusController {
     
     CalculusLogic calculuslogic;
 
-    public CalculusController(CalculusLogic logic) {
+    public calculusController(CalculusLogic logic) {
         super();
         this.calculuslogic = logic;    
     }
