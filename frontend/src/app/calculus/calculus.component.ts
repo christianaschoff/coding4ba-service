@@ -15,6 +15,6 @@ export class CalculusComponent {
   constructor(private readonly calculatorService: CalculatorService) {}
 
   calculate () {
-    this.erebnis = this.calculatorService.caluclationServiceCall(this.model);
+    this.erebnis = this.calculatorService.calculationServiceCall(this.model);
   }
 }

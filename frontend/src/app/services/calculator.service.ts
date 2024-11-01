@@ -11,7 +11,7 @@ export class CalculatorService {
   constructor(private readonly httpClient: HttpClient) {
   }
 
-  caluclationServiceCall(model: CalculusModel) : Observable<Number> {
+  calculationServiceCall(model: CalculusModel) : Observable<Number> {
 
     if(!model || !model.zahl1 || !model.zahl2 || !model.operator) {
       return of(NaN);
