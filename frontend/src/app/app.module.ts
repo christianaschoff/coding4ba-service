@@ -13,11 +13,13 @@ import {MatFormFieldModule} from '@angular/material/form-field';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { MatOptionModule } from '@angular/material/core';
+import { HelloComponent } from './hello/hello.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    CalculusComponent
+    CalculusComponent,
+    HelloComponent
   ],
   imports: [
     BrowserModule,
